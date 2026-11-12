@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Осень Средневековья</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1d2459">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="История">
+<link rel="manifest" id="mf">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1fb;--card:#fff;--ink:#1d2459;--mut:#5b6390;--acc:#f5a623;--ok:#2fa36b;--bad:#d64545;--line:#d5daf0;--chip:#dfe4fa;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121638;--card:#1d2459;--ink:#f1f3ff;--mut:#aab2e6;--line:#36408a;--chip:#2a3377;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121638;--card:#1d2459;--ink:#f1f3ff;--mut:#aab2e6;--line:#36408a;--chip:#2a3377;color-scheme:dark}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:500 17px/1.45 Nunito,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100%}
+header{padding:16px 16px 8px;max-width:640px;margin:0 auto}
+h1{margin:0;font-size:24px;font-weight:900;letter-spacing:-.3px}
+.sub{color:var(--mut);font-size:14px}
+.bar{height:10px;background:var(--chip);border-radius:9px;margin-top:10px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--ok);border-radius:9px;transition:width .4s}
+main{max-width:640px;margin:0 auto;padding:8px 16px 96px}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:2px solid var(--line);display:flex;justify-content:center;gap:4px;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));z-index:5}
+nav button{flex:1;max-width:140px;background:none;border:0;color:var(--mut);font:700 12px Nunito,system-ui,sans-serif;padding:6px 2px;border-radius:12px}
+nav button b{display:block;font-size:22px;line-height:1.2}
+nav button.on{background:var(--chip);color:var(--ink)}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:6px 0 12px}
+.chip{flex:none;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:20px;padding:6px 14px;font:700 14px Nunito,system-ui,sans-serif}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.flip{perspective:1000px;height:280px;margin:6px 0 14px}
+.fi{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.flip.f .fi{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:24px;padding:22px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border:3px solid var(--ink);background:var(--card);overflow:auto}
+.back{transform:rotateY(180deg);background:var(--acc);color:#1d2459;border-color:#1d2459}
+.tag{font-size:13px;color:var(--mut);font-weight:700;margin-bottom:10px}
+.back .tag{color:#4a3500}
+.q{font-size:26px;font-weight:900;line-height:1.2}
+.a{font-size:21px;font-weight:700}
+.hint{color:var(--mut);font-size:13px;margin-top:12px}
+.row{display:flex;gap:10px}
+.btn{flex:1;border:0;border-radius:16px;padding:15px 10px;font:900 17px Nunito,system-ui,sans-serif;color:#fff;background:var(--ink)}
+.btn.g{background:var(--ok)}.btn.r{background:var(--bad)}.btn.o{background:var(--card);color:var(--ink);border:2px solid var(--line)}
+.btn:active{transform:scale(.97)}
+.opt{display:block;width:100%;text-align:left;margin:0 0 10px;border:3px solid var(--line);background:var(--card);color:var(--ink);border-radius:16px;padding:14px 16px;font:700 17px/1.3 Nunito,system-ui,sans-serif}
+.opt.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 22%,var(--card))}
+.opt.no{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 22%,var(--card))}
+.qq{font-size:23px;font-weight:900;margin:8px 0 16px;line-height:1.25}
+.cnt{color:var(--mut);font-weight:700;font-size:14px}
+.big{text-align:center;padding:30px 10px}
+.big .st{font-size:56px;letter-spacing:6px}
+.big h2{margin:8px 0}
+.list{display:grid;gap:10px}
+.li{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:12px 14px}
+.li b{font-weight:900}
+.li .y{display:inline-block;background:var(--acc);color:#1d2459;font-weight:900;border-radius:10px;padding:2px 10px;margin-right:8px}
+.li.k{border-color:var(--ok)}
+.reset{margin-top:20px;background:none;border:0;color:var(--mut);text-decoration:underline;font:700 14px Nunito,system-ui,sans-serif}
+@media (prefers-reduced-motion:reduce){.fi,.bar i{transition:none}}
+</style>
+</head>
+<body>
+<header>
+<h1>Осень Средневековья</h1>
+<div class="sub" id="prog"></div>
+<div class="bar"><i id="pb"></i></div>
+</header>
+<main id="app"></main>
+<nav id="nav"></nav>
+<script>
+var C=[
+// даты
+{c:'d',q:'Столетняя война',a:'1337–1453'},
+{c:'d',q:'«Чёрная смерть» в Европе',a:'1346–1353'},
+{c:'d',q:'Битва при Креси',a:'1346'},
+{c:'d',q:'Битва при Пуатье',a:'1356'},
+{c:'d',q:'Жакерия — восстание крестьян во Франции',a:'1358'},
+{c:'d',q:'Договор в Бретиньи',a:'1360'},
+{c:'d',q:'Восстание чомпи во Флоренции',a:'1378'},
+{c:'d',q:'Восстание Уота Тайлера в Англии',a:'1381'},
+{c:'d',q:'Набег хана Тохтамыша на Москву',a:'1382'},
+{c:'d',q:'Кревская уния Польши и Литвы',a:'1385'},
+{c:'d',q:'Битва при Грюнвальде',a:'1410'},
+{c:'d',q:'Битва при Азенкуре',a:'1415'},
+{c:'d',q:'Казнь Яна Гуса',a:'1415'},
+{c:'d',q:'Гуситские войны',a:'1419–1434'},
+{c:'d',q:'Договор: Генрих V становится правителем Франции',a:'1420'},
+{c:'d',q:'Осада Орлеана англичанами',a:'1428'},
+{c:'d',q:'Снятие осады Орлеана; коронация Карла VII в Реймсе',a:'1429'},
+{c:'d',q:'Казнь Жанны д’Арк',a:'1431'},
+{c:'d',q:'Конец Столетней войны (у англичан остался только Кале)',a:'1453'},
+{c:'d',q:'Междоусобная война в Московском княжестве',a:'1425–1453'},
+{c:'d',q:'Основание Казанского ханства',a:'1438'},
+// личности
+{c:'p',q:'Ян Гус',a:'Чешский проповедник, критик духовенства. Сожжён в 1415 г. на Констанцском соборе, хотя имел охранную грамоту.'},
+{c:'p',q:'Жанна д’Арк',a:'Крестьянская девушка. Убедила Карла VII, сняла осаду Орлеана. Сожжена как еретичка в 1431 г. Позже оправдана.'},
+{c:'p',q:'Ян Жижка',a:'Полководец гуситов (таборитов). Использовал боевые повозки против рыцарской конницы. Воевал даже слепым.'},
+{c:'p',q:'Эдуард III',a:'Английский король. Заявил права на французский престол — началась Столетняя война.'},
+{c:'p',q:'Генрих V',a:'Английский король. Возобновил войну и победил при Азенкуре.'},
+{c:'p',q:'Карл VI',a:'Французский король, страдавший безумием.'},
+{c:'p',q:'Карл VII',a:'Сын Карла VI. Коронован в Реймсе благодаря Жанне д’Арк.'},
+{c:'p',q:'Уот Тайлер',a:'Кровельщик, предводитель английского восстания 1381 г.'},
+{c:'p',q:'Ричард II',a:'Английский король. Во время восстания Уота Тайлера был подростком.'},
+{c:'p',q:'Карл IV',a:'Чешский король и император Священной Римской империи. Развивал Прагу, основал университет.'},
+{c:'p',q:'Сигизмунд I',a:'Король Германии. Выдал Гусу охранную грамоту.'},
+// термины
+{c:'t',q:'«Чёрная смерть»',a:'Эпидемия чумы 1346–1353 гг. Унесла около трети населения Европы.'},
+{c:'t',q:'Гетто',a:'Особые городские кварталы, где после «Чёрной смерти» разрешали жить евреям. Их заставляли носить отличительную одежду или знаки.'},
+{c:'t',q:'Жакерия',a:'Крестьянское восстание 1358 г. во Франции. Название — от презрительного «жаки».'},
+{c:'t',q:'Столетняя война',a:'Война Англии и Франции 1337–1453 гг. (на самом деле 116 лет).'},
+{c:'t',q:'Гуситы',a:'Сторонники учения Яна Гуса.'},
+{c:'t',q:'Табориты',a:'Самая радикальная часть гуситов. Собирались на горе Табор.'},
+{c:'t',q:'Кревская уния',a:'Союз Польши и Литвы (1385 г.).'},
+{c:'t',q:'Барщина',a:'Работа крестьян на земле господина. В XIV в. её всё чаще заменял денежный оброк.'},
+{c:'t',q:'Денежный оброк',a:'Плата деньгами вместо барщины. Помог крестьянам освободиться от личной зависимости.'},
+// факты
+{c:'f',q:'Чем стала опасна чума для городов?',a:'Города пострадали сильнее всего. Умерло около 1/3 населения Европы, местами до 3/4.'},
+{c:'f',q:'Как чума попала в Европу?',a:'Через крыс с кораблей, пришедших с Востока.'},
+{c:'f',q:'В чём евреев обвиняли во время чумы?',a:'В отравлении колодцев. Начались погромы.'},
+{c:'f',q:'Что изменилось после чумы с работниками?',a:'Рабочих рук не хватало, труд стал дороже. Власти ввели законы о максимальной оплате, сеньоры пытались вернуть барщину.'},
+{c:'f',q:'Почему началась Столетняя война?',a:'Эдуард III претендовал на французский трон после пресечения династии Капетингов (1328).'},
+{c:'f',q:'Какие победы одержали англичане?',a:'При Креси (1346), Пуатье (1356) и Азенкуре (1415).'},
+{c:'f',q:'Что сделала Жанна д’Арк?',a:'Сняла осаду Орлеана (1429) и добилась коронации Карла VII. Это стало переломом в войне.'},
+{c:'f',q:'Что сжигали жакеры?',a:'Замки и документы о повинностях.'},
+{c:'f',q:'Чего требовал Уот Тайлер?',a:'Личной свободы, равенства и раздела церковных земель.'},
+{c:'f',q:'Почему чехи критиковали Церковь?',a:'Церковь владела 1/3 земель. Гус также осуждал нравы духовенства и засилье немцев.'}
+];
+var CAT={all:'Всё',d:'Даты',p:'Личности',t:'Термины',f:'Факты'};
+var QT={d:function(c){return 'Когда это было?<br>'+c.q},p:function(c){return 'Кто это?<br>'+c.q},t:function(c){return 'Что такое «'+c.q+'»?'},f:function(c){return c.q}};
+var S={tab:'cards',cat:'all',known:{},best:0};
+try{var raw=localStorage.getItem('sv1');if(raw)Object.assign(S,JSON.parse(raw))}catch(e){}
+S.tab='cards';
+function save(){try{localStorage.setItem('sv1',JSON.stringify({known:S.known,best:S.best,cat:S.cat}))}catch(e){}}
+function pool(){return C.map(function(c,i){c.i=i;return c}).filter(function(c){return S.cat=='all'||c.c==S.cat})}
+function sh(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+var app=document.getElementById('app');
+function progress(){var n=C.filter(function(c,i){return S.known[i]}).length;document.getElementById('prog').textContent='Выучено '+n+' из '+C.length;document.getElementById('pb').style.width=(100*n/C.length)+'%'}
+function nav(){var T=[['cards','🃏','Карточки'],['quiz','🎯','Тест'],['list','📖','Список']];document.getElementById('nav').innerHTML=T.map(function(t){return '<button class="'+(S.tab==t[0]?'on':'')+'" data-t="'+t[0]+'"><b>'+t[1]+'</b>'+t[2]+'</button>'}).join('')}
+document.getElementById('nav').onclick=function(e){var b=e.target.closest('button');if(!b)return;S.tab=b.dataset.t;start()};
+function chips(){return '<div class="chips">'+Object.keys(CAT).map(function(k){return '<button class="chip'+(S.cat==k?' on':'')+'" data-c="'+k+'">'+CAT[k]+'</button>'}).join('')+'</div>'}
+app.onclick=function(e){var b=e.target.closest('[data-c]');if(b){S.cat=b.dataset.c;save();start()}};
+var deck=[],pos=0,flipped=false;
+function start(){nav();progress();if(S.tab=='cards')startCards();else if(S.tab=='quiz')startQuiz();else showList();window.scrollTo(0,0)}
+// карточки
+function startCards(){var p=pool();var todo=p.filter(function(c){return !S.known[c.i]});deck=sh(todo.length?todo:p);pos=0;showCard()}
+function showCard(){
+ if(pos>=deck.length){app.innerHTML=chips()+'<div class="big"><div class="st">🎉</div><h2>Колода пройдена!</h2><p class="sub">Выученные карточки больше не показываются. Можно начать заново или пройти тест.</p><div class="row"><button class="btn o" id="again">Ещё круг</button><button class="btn" id="goq">В тест</button></div></div>';
+  document.getElementById('again').onclick=startCards;document.getElementById('goq').onclick=function(){S.tab='quiz';start()};return}
+ var c=deck[pos];flipped=false;
+ app.innerHTML=chips()+'<div class="cnt">Карточка '+(pos+1)+' из '+deck.length+'</div><div class="flip" id="fl"><div class="fi"><div class="face"><div class="tag">'+CAT[c.c]+'</div><div class="q">'+QT[c.c](c)+'</div><div class="hint">Нажми, чтобы увидеть ответ</div></div><div class="face back"><div class="tag">Ответ</div><div class="a">'+c.a+'</div></div></div></div><div class="row"><button class="btn r" id="no">Ещё раз</button><button class="btn g" id="yes">Знаю!</button></div>';
+ var fl=document.getElementById('fl');fl.onclick=function(){fl.classList.toggle('f')};
+ document.getElementById('yes').onclick=function(){S.known[c.i]=1;save();progress();pos++;showCard()};
+ document.getElementById('no').onclick=function(){delete S.known[c.i];save();progress();deck.push(c);pos++;showCard()};
+}
+// тест
+var qs=[],qi=0,score=0;
+function startQuiz(){var p=pool();if(p.length<4){p=C.map(function(c,i){c.i=i;return c})}
+ qs=sh(p).slice(0,10);qi=0;score=0;showQ()}
+function showQ(){
+ if(qi>=qs.length){var pc=score/qs.length;var st=pc>=.9?'⭐⭐⭐':pc>=.6?'⭐⭐':pc>=.3?'⭐':'💪';if(score>S.best){S.best=score;save()}
+  app.innerHTML=chips()+'<div class="big"><div class="st">'+st+'</div><h2>'+score+' из '+qs.length+'</h2><p class="sub">Рекорд: '+S.best+'</p><div class="row"><button class="btn" id="rq">Ещё тест</button></div></div>';document.getElementById('rq').onclick=startQuiz;return}
+ var c=qs[qi];var same=C.filter(function(x){return x.c==c.c&&x.a!==c.a});
+ var opts=sh(sh(same).slice(0,3).concat([c]));
+ app.innerHTML=chips()+'<div class="cnt">Вопрос '+(qi+1)+' из '+qs.length+' · верно: '+score+'</div><div class="qq">'+QT[c.c](c)+'</div>'+opts.map(function(o,k){return '<button class="opt" data-k="'+k+'">'+o.a+'</button>'}).join('');
+ var done=false;
+ app.querySelectorAll('.opt').forEach(function(b,k){b.onclick=function(){if(done)return;done=true;var right=opts[k]===c;
+  if(right){score++;S.known[c.i]=1}else{delete S.known[c.i]}
+  save();progress();
+  app.querySelectorAll('.opt').forEach(function(x,m){if(opts[m]===c)x.classList.add('ok')});
+  if(!right)b.classList.add('no');
+  var nx=document.createElement('button');nx.className='btn';nx.textContent=right?'Верно! Дальше':'Запомни! Дальше';nx.style.marginTop='6px';nx.style.width='100%';nx.onclick=function(){qi++;showQ()};app.appendChild(nx)}})}
+// список
+function showList(){
+ app.innerHTML=chips()+'<div class="list">'+pool().map(function(c){var h=c.c=='d'?'<span class="y">'+c.a+'</span><b>'+c.q+'</b>':'<b>'+c.q+'</b><br>'+c.a;return '<div class="li'+(S.known[c.i]?' k':'')+'">'+h+'</div>'}).join('')+'</div><button class="reset" id="rs">Сбросить прогресс</button>';
+ document.getElementById('rs').onclick=function(){if(confirm('Сбросить весь прогресс?')){S.known={};S.best=0;save();start()}};
+}
+// манифест (PWA)
+try{var svg="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='40' fill='#1d2459'/><text x='96' y='128' font-size='100' text-anchor='middle'>🏰</text></svg>";
+var ic='data:image/svg+xml,'+encodeURIComponent(svg);
+var m={name:'Осень Средневековья',short_name:'История',lang:'ru',display:'standalone',background_color:'#1d2459',theme_color:'#1d2459',icons:[{src:ic,sizes:'192x192',type:'image/svg+xml',purpose:'any'}]};
+document.getElementById('mf').href='data:application/manifest+json,'+encodeURIComponent(JSON.stringify(m));
+var l=document.createElement('link');l.rel='apple-touch-icon';l.href=ic;document.head.appendChild(l)}catch(e){}
+start();
+</script>
+</body>
+</html>
